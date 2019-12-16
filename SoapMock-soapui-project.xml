@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="71285bb0-dfed-4863-ac9a-1dfb483aaa72" activeEnvironment="Default" name="SoapMock" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" encryptionMode="Not encrypted" updated="3.0.0 2019-11-05T14:42:03Z" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="e721b7bb-e053-478a-8fb1-1dde2fc4429a" wsaVersion="NONE" name="ConverterSoap" type="wsdl" bindingName="{http://tempuri.org/}ConverterSoap" soapVersion="1_1" anonymous="optional" definition="http://currencyconverter.kowabunga.net/converter.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint></con:endpoints><con:operation id="08cd478d-fd8d-468a-94c9-95a523c02823" isOneWay="false" action="http://tempuri.org/ConvertDataTableColumn" name="ConvertDataTableColumn" bindingOperationName="ConvertDataTableColumn" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="14a90707-554a-4f63-9f67-c9e4272001bc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ConvertDataTableColumn>\r
+         <!--Optional:-->\r
+         <tem:ds>\r
+            <xs:schema>\r
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->\r
+            </xs:schema>\r
+            <!--You may enter ANY elements at this point-->\r
+         </tem:ds>\r
+         <tem:TableIndex>?</tem:TableIndex>\r
+         <!--Optional:-->\r
+         <tem:ColumnName>?</tem:ColumnName>\r
+         <!--Optional:-->\r
+         <tem:FromCurrency>?</tem:FromCurrency>\r
+         <!--Optional:-->\r
+         <tem:ToCurrency>?</tem:ToCurrency>\r
+      </tem:ConvertDataTableColumn>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConvertDataTableColumn"/></con:call></con:operation><con:operation id="641e2037-ebe3-40ce-a77d-de0c54ee4215" isOneWay="false" action="http://tempuri.org/GetConversionAmount" name="GetConversionAmount" bindingOperationName="GetConversionAmount" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e3f828a4-1249-4c83-a508-c3a082f6cd9a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetConversionAmount>\r
+         <!--Optional:-->\r
+         <tem:CurrencyFrom>?</tem:CurrencyFrom>\r
+         <!--Optional:-->\r
+         <tem:CurrencyTo>?</tem:CurrencyTo>\r
+         <tem:RateDate>?</tem:RateDate>\r
+         <tem:Amount>?</tem:Amount>\r
+      </tem:GetConversionAmount>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetConversionAmount"/></con:call></con:operation><con:operation id="c0083090-575a-457f-8aac-7b06a2325640" isOneWay="false" action="http://tempuri.org/GetConversionRate" name="GetConversionRate" bindingOperationName="GetConversionRate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9359eeb8-3749-4a7d-ae96-2c5c2de2d757" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetConversionRate>\r
+         <!--Optional:-->\r
+         <tem:CurrencyFrom>?</tem:CurrencyFrom>\r
+         <!--Optional:-->\r
+         <tem:CurrencyTo>?</tem:CurrencyTo>\r
+         <tem:RateDate>?</tem:RateDate>\r
+      </tem:GetConversionRate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetConversionRate"/></con:call></con:operation><con:operation id="514807c1-87cc-47e7-a4cc-d5d7b002adb8" isOneWay="false" action="http://tempuri.org/GetCultureInfo" name="GetCultureInfo" bindingOperationName="GetCultureInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="274cc36d-c69b-44e2-9e62-c6c2a97216ad" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetCultureInfo>\r
+         <!--Optional:-->\r
+         <tem:Currency>?</tem:Currency>\r
+      </tem:GetCultureInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetCultureInfo"/></con:call></con:operation><con:operation id="be21d8fc-3142-4df8-b71a-571a7b521085" isOneWay="false" action="http://tempuri.org/GetCurrencies" name="GetCurrencies" bindingOperationName="GetCurrencies" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8778cf5e-8e3b-415e-b4b3-00acbd193ff7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetCurrencies/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetCurrencies"/></con:call></con:operation><con:operation id="72dbbbf2-6024-4e9e-b695-1e3da63a03b1" isOneWay="false" action="http://tempuri.org/GetCurrencyRate" name="GetCurrencyRate" bindingOperationName="GetCurrencyRate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="63c99aa7-b36c-4780-9bfe-03caa28e1df2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetCurrencyRate>\r
+         <!--Optional:-->\r
+         <tem:Currency>?</tem:Currency>\r
+         <tem:RateDate>?</tem:RateDate>\r
+      </tem:GetCurrencyRate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetCurrencyRate"/></con:call></con:operation><con:operation id="21984c4a-3e45-450d-85fb-7d56226b23e9" isOneWay="false" action="http://tempuri.org/GetCurrencyRates" name="GetCurrencyRates" bindingOperationName="GetCurrencyRates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="467eaffb-2f20-40f3-8c88-9eb6fb08f5a7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetCurrencyRates>\r
+         <tem:RateDate>?</tem:RateDate>\r
+      </tem:GetCurrencyRates>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetCurrencyRates"/></con:call></con:operation><con:operation id="d4ccd307-d721-4a43-a3c7-3d53f83c2b85" isOneWay="false" action="http://tempuri.org/GetLastUpdateDate" name="GetLastUpdateDate" bindingOperationName="GetLastUpdateDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="66681209-d200-47a1-92ab-b83a3d877896" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetLastUpdateDate/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetLastUpdateDate"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="7e38c3e5-0579-408f-9786-aec3e4eaa3db" wsaVersion="NONE" name="ConverterSoap12" type="wsdl" bindingName="{http://tempuri.org/}ConverterSoap12" soapVersion="1_2" anonymous="optional" definition="http://currencyconverter.kowabunga.net/converter.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://currencyconverter.kowabunga.net/converter.asmx?WSDL"><con:part><con:url>http://currencyconverter.kowabunga.net/converter.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetCurrencies">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetCurrenciesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrenciesResult" type="tns:ArrayOfString"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCurrencyRate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Currency" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="RateDate" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrencyRateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCurrencyRateResult" type="s:decimal"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrencyRates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RateDate" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrencyRatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrencyRatesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetConversionRate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CurrencyFrom" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CurrencyTo" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="RateDate" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetConversionRateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetConversionRateResult" type="s:decimal"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetConversionAmount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CurrencyFrom" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CurrencyTo" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="RateDate" type="s:dateTime"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:decimal"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetConversionAmountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetConversionAmountResult" type="s:decimal"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCultureInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Currency" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCultureInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCultureInfoResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertDataTableColumn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="TableIndex" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ColumnName" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="FromCurrency" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ToCurrency" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertDataTableColumnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastUpdateDate">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetLastUpdateDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLastUpdateDateResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayOfString" nillable="true" type="tns:ArrayOfString"/>
+      <s:element name="decimal" type="s:decimal"/>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema"/>
+            <s:any/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string"/>
+      <s:element name="dateTime" type="s:dateTime"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCurrenciesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrencies"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrenciesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrenciesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrencyRate"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrencyRateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRatesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrencyRates"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRatesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrencyRatesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionRateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetConversionRate"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionRateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetConversionRateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionAmountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetConversionAmount"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionAmountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetConversionAmountResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCultureInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCultureInfo"/>
+  </wsdl:message>
+  <wsdl:message name="GetCultureInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCultureInfoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ConvertDataTableColumnSoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertDataTableColumn"/>
+  </wsdl:message>
+  <wsdl:message name="ConvertDataTableColumnSoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertDataTableColumnResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetLastUpdateDateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastUpdateDate"/>
+  </wsdl:message>
+  <wsdl:message name="GetLastUpdateDateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastUpdateDateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrenciesHttpGetIn"/>
+  <wsdl:message name="GetCurrenciesHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRateHttpGetIn">
+    <wsdl:part name="Currency" type="s:string"/>
+    <wsdl:part name="RateDate" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRateHttpGetOut">
+    <wsdl:part name="Body" element="tns:decimal"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRatesHttpGetIn">
+    <wsdl:part name="RateDate" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRatesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionRateHttpGetIn">
+    <wsdl:part name="CurrencyFrom" type="s:string"/>
+    <wsdl:part name="CurrencyTo" type="s:string"/>
+    <wsdl:part name="RateDate" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionRateHttpGetOut">
+    <wsdl:part name="Body" element="tns:decimal"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionAmountHttpGetIn">
+    <wsdl:part name="CurrencyFrom" type="s:string"/>
+    <wsdl:part name="CurrencyTo" type="s:string"/>
+    <wsdl:part name="RateDate" type="s:string"/>
+    <wsdl:part name="Amount" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionAmountHttpGetOut">
+    <wsdl:part name="Body" element="tns:decimal"/>
+  </wsdl:message>
+  <wsdl:message name="GetCultureInfoHttpGetIn">
+    <wsdl:part name="Currency" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCultureInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetLastUpdateDateHttpGetIn"/>
+  <wsdl:message name="GetLastUpdateDateHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrenciesHttpPostIn"/>
+  <wsdl:message name="GetCurrenciesHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRateHttpPostIn">
+    <wsdl:part name="Currency" type="s:string"/>
+    <wsdl:part name="RateDate" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRateHttpPostOut">
+    <wsdl:part name="Body" element="tns:decimal"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRatesHttpPostIn">
+    <wsdl:part name="RateDate" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyRatesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionRateHttpPostIn">
+    <wsdl:part name="CurrencyFrom" type="s:string"/>
+    <wsdl:part name="CurrencyTo" type="s:string"/>
+    <wsdl:part name="RateDate" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionRateHttpPostOut">
+    <wsdl:part name="Body" element="tns:decimal"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionAmountHttpPostIn">
+    <wsdl:part name="CurrencyFrom" type="s:string"/>
+    <wsdl:part name="CurrencyTo" type="s:string"/>
+    <wsdl:part name="RateDate" type="s:string"/>
+    <wsdl:part name="Amount" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetConversionAmountHttpPostOut">
+    <wsdl:part name="Body" element="tns:decimal"/>
+  </wsdl:message>
+  <wsdl:message name="GetCultureInfoHttpPostIn">
+    <wsdl:part name="Currency" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCultureInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetLastUpdateDateHttpPostIn"/>
+  <wsdl:message name="GetLastUpdateDateHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:portType name="ConverterSoap">
+    <wsdl:operation name="GetCurrencies">
+      <wsdl:input message="tns:GetCurrenciesSoapIn"/>
+      <wsdl:output message="tns:GetCurrenciesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRate">
+      <wsdl:input message="tns:GetCurrencyRateSoapIn"/>
+      <wsdl:output message="tns:GetCurrencyRateSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRates">
+      <wsdl:input message="tns:GetCurrencyRatesSoapIn"/>
+      <wsdl:output message="tns:GetCurrencyRatesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionRate">
+      <wsdl:input message="tns:GetConversionRateSoapIn"/>
+      <wsdl:output message="tns:GetConversionRateSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionAmount">
+      <wsdl:input message="tns:GetConversionAmountSoapIn"/>
+      <wsdl:output message="tns:GetConversionAmountSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCultureInfo">
+      <wsdl:input message="tns:GetCultureInfoSoapIn"/>
+      <wsdl:output message="tns:GetCultureInfoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertDataTableColumn">
+      <wsdl:input message="tns:ConvertDataTableColumnSoapIn"/>
+      <wsdl:output message="tns:ConvertDataTableColumnSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastUpdateDate">
+      <wsdl:input message="tns:GetLastUpdateDateSoapIn"/>
+      <wsdl:output message="tns:GetLastUpdateDateSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ConverterHttpGet">
+    <wsdl:operation name="GetCurrencies">
+      <wsdl:input message="tns:GetCurrenciesHttpGetIn"/>
+      <wsdl:output message="tns:GetCurrenciesHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRate">
+      <wsdl:input message="tns:GetCurrencyRateHttpGetIn"/>
+      <wsdl:output message="tns:GetCurrencyRateHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRates">
+      <wsdl:input message="tns:GetCurrencyRatesHttpGetIn"/>
+      <wsdl:output message="tns:GetCurrencyRatesHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionRate">
+      <wsdl:input message="tns:GetConversionRateHttpGetIn"/>
+      <wsdl:output message="tns:GetConversionRateHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionAmount">
+      <wsdl:input message="tns:GetConversionAmountHttpGetIn"/>
+      <wsdl:output message="tns:GetConversionAmountHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCultureInfo">
+      <wsdl:input message="tns:GetCultureInfoHttpGetIn"/>
+      <wsdl:output message="tns:GetCultureInfoHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastUpdateDate">
+      <wsdl:input message="tns:GetLastUpdateDateHttpGetIn"/>
+      <wsdl:output message="tns:GetLastUpdateDateHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ConverterHttpPost">
+    <wsdl:operation name="GetCurrencies">
+      <wsdl:input message="tns:GetCurrenciesHttpPostIn"/>
+      <wsdl:output message="tns:GetCurrenciesHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRate">
+      <wsdl:input message="tns:GetCurrencyRateHttpPostIn"/>
+      <wsdl:output message="tns:GetCurrencyRateHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRates">
+      <wsdl:input message="tns:GetCurrencyRatesHttpPostIn"/>
+      <wsdl:output message="tns:GetCurrencyRatesHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionRate">
+      <wsdl:input message="tns:GetConversionRateHttpPostIn"/>
+      <wsdl:output message="tns:GetConversionRateHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionAmount">
+      <wsdl:input message="tns:GetConversionAmountHttpPostIn"/>
+      <wsdl:output message="tns:GetConversionAmountHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCultureInfo">
+      <wsdl:input message="tns:GetCultureInfoHttpPostIn"/>
+      <wsdl:output message="tns:GetCultureInfoHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastUpdateDate">
+      <wsdl:input message="tns:GetLastUpdateDateHttpPostIn"/>
+      <wsdl:output message="tns:GetLastUpdateDateHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ConverterSoap" type="tns:ConverterSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetCurrencies">
+      <soap:operation soapAction="http://tempuri.org/GetCurrencies" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRate">
+      <soap:operation soapAction="http://tempuri.org/GetCurrencyRate" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRates">
+      <soap:operation soapAction="http://tempuri.org/GetCurrencyRates" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionRate">
+      <soap:operation soapAction="http://tempuri.org/GetConversionRate" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionAmount">
+      <soap:operation soapAction="http://tempuri.org/GetConversionAmount" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCultureInfo">
+      <soap:operation soapAction="http://tempuri.org/GetCultureInfo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertDataTableColumn">
+      <soap:operation soapAction="http://tempuri.org/ConvertDataTableColumn" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastUpdateDate">
+      <soap:operation soapAction="http://tempuri.org/GetLastUpdateDate" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ConverterSoap12" type="tns:ConverterSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetCurrencies">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrencies" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRate">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrencyRate" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRates">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrencyRates" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionRate">
+      <soap12:operation soapAction="http://tempuri.org/GetConversionRate" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionAmount">
+      <soap12:operation soapAction="http://tempuri.org/GetConversionAmount" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCultureInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetCultureInfo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertDataTableColumn">
+      <soap12:operation soapAction="http://tempuri.org/ConvertDataTableColumn" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastUpdateDate">
+      <soap12:operation soapAction="http://tempuri.org/GetLastUpdateDate" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ConverterHttpGet" type="tns:ConverterHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="GetCurrencies">
+      <http:operation location="/GetCurrencies"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRate">
+      <http:operation location="/GetCurrencyRate"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRates">
+      <http:operation location="/GetCurrencyRates"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionRate">
+      <http:operation location="/GetConversionRate"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionAmount">
+      <http:operation location="/GetConversionAmount"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCultureInfo">
+      <http:operation location="/GetCultureInfo"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastUpdateDate">
+      <http:operation location="/GetLastUpdateDate"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ConverterHttpPost" type="tns:ConverterHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="GetCurrencies">
+      <http:operation location="/GetCurrencies"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRate">
+      <http:operation location="/GetCurrencyRate"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyRates">
+      <http:operation location="/GetCurrencyRates"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionRate">
+      <http:operation location="/GetConversionRate"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionAmount">
+      <http:operation location="/GetConversionAmount"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCultureInfo">
+      <http:operation location="/GetCultureInfo"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastUpdateDate">
+      <http:operation location="/GetLastUpdateDate"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Converter">
+    <wsdl:port name="ConverterSoap" binding="tns:ConverterSoap">
+      <soap:address location="http://currencyconverter.kowabunga.net/converter.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ConverterSoap12" binding="tns:ConverterSoap12">
+      <soap12:address location="http://currencyconverter.kowabunga.net/converter.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ConverterHttpGet" binding="tns:ConverterHttpGet">
+      <http:address location="http://currencyconverter.kowabunga.net/converter.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ConverterHttpPost" binding="tns:ConverterHttpPost">
+      <http:address location="http://currencyconverter.kowabunga.net/converter.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint></con:endpoints><con:operation id="536b8be6-2279-4399-be35-14d58a05f606" isOneWay="false" action="http://tempuri.org/ConvertDataTableColumn" name="ConvertDataTableColumn" bindingOperationName="ConvertDataTableColumn" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="06a51f8c-cde3-481e-8a1e-2e65d43247a3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:ConvertDataTableColumn>\r
+         <!--Optional:-->\r
+         <tem:ds>\r
+            <xs:schema>\r
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->\r
+            </xs:schema>\r
+            <!--You may enter ANY elements at this point-->\r
+         </tem:ds>\r
+         <tem:TableIndex>?</tem:TableIndex>\r
+         <!--Optional:-->\r
+         <tem:ColumnName>?</tem:ColumnName>\r
+         <!--Optional:-->\r
+         <tem:FromCurrency>?</tem:FromCurrency>\r
+         <!--Optional:-->\r
+         <tem:ToCurrency>?</tem:ToCurrency>\r
+      </tem:ConvertDataTableColumn>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConverterSoap/ConvertDataTableColumnRequest"/></con:call></con:operation><con:operation id="80941251-b6c0-4a8f-81d3-247ebcc0f020" isOneWay="false" action="http://tempuri.org/GetConversionAmount" name="GetConversionAmount" bindingOperationName="GetConversionAmount" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c284ad6f-fb12-40d5-916c-1180e9ec9968" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetConversionAmount>\r
+         <!--Optional:-->\r
+         <tem:CurrencyFrom>?</tem:CurrencyFrom>\r
+         <!--Optional:-->\r
+         <tem:CurrencyTo>?</tem:CurrencyTo>\r
+         <tem:RateDate>?</tem:RateDate>\r
+         <tem:Amount>?</tem:Amount>\r
+      </tem:GetConversionAmount>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConverterSoap/GetConversionAmountRequest"/></con:call></con:operation><con:operation id="a13cc523-b02d-4754-87ff-4bec8c80de6d" isOneWay="false" action="http://tempuri.org/GetConversionRate" name="GetConversionRate" bindingOperationName="GetConversionRate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9d4e76f3-3002-482f-9df2-08d18ed12353" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetConversionRate>\r
+         <!--Optional:-->\r
+         <tem:CurrencyFrom>?</tem:CurrencyFrom>\r
+         <!--Optional:-->\r
+         <tem:CurrencyTo>?</tem:CurrencyTo>\r
+         <tem:RateDate>?</tem:RateDate>\r
+      </tem:GetConversionRate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConverterSoap/GetConversionRateRequest"/></con:call></con:operation><con:operation id="e1d015e9-bd8b-4722-85e8-a06a4e13e05c" isOneWay="false" action="http://tempuri.org/GetCultureInfo" name="GetCultureInfo" bindingOperationName="GetCultureInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="095486da-48ff-4f9c-875b-493b601582eb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetCultureInfo>\r
+         <!--Optional:-->\r
+         <tem:Currency>?</tem:Currency>\r
+      </tem:GetCultureInfo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConverterSoap/GetCultureInfoRequest"/></con:call></con:operation><con:operation id="a7febef5-c79d-4ff8-943d-2118fb400def" isOneWay="false" action="http://tempuri.org/GetCurrencies" name="GetCurrencies" bindingOperationName="GetCurrencies" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6e409e99-0f67-4e8e-ac8d-c30a6998159c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetCurrencies/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConverterSoap/GetCurrenciesRequest"/></con:call></con:operation><con:operation id="58d9d200-1361-4380-a10d-c43cbd1e5214" isOneWay="false" action="http://tempuri.org/GetCurrencyRate" name="GetCurrencyRate" bindingOperationName="GetCurrencyRate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="66ae5ca3-58c1-4816-8a63-2ea08117f5cd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetCurrencyRate>\r
+         <!--Optional:-->\r
+         <tem:Currency>?</tem:Currency>\r
+         <tem:RateDate>?</tem:RateDate>\r
+      </tem:GetCurrencyRate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConverterSoap/GetCurrencyRateRequest"/></con:call></con:operation><con:operation id="b037f056-ce92-4a2e-a95a-6c20ed0c44df" isOneWay="false" action="http://tempuri.org/GetCurrencyRates" name="GetCurrencyRates" bindingOperationName="GetCurrencyRates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bce0d210-d3e0-4db0-8b83-aa69b16f0d0e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetCurrencyRates>\r
+         <tem:RateDate>?</tem:RateDate>\r
+      </tem:GetCurrencyRates>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConverterSoap/GetCurrencyRatesRequest"/></con:call></con:operation><con:operation id="eddbe0b1-897e-43ca-8a30-5797a67e1771" isOneWay="false" action="http://tempuri.org/GetLastUpdateDate" name="GetLastUpdateDate" bindingOperationName="GetLastUpdateDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="66140448-e4bb-4fd7-91ee-19e9ebc354d5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetLastUpdateDate/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConverterSoap/GetLastUpdateDateRequest"/></con:call></con:operation></con:interface><con:mockService id="50fbbea2-3eea-4998-83d2-5c79a862f7ee" port="8089" path="/" host="localhost" name="MockService 1" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:dataSources/><con:headerValidator/><con:mockOperation name="GetCurrencies" id="8ab33e7c-b24c-470b-b0f2-3b7243435c28" interface="ConverterSoap" operation="GetCurrencies"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="a60e8ba2-70fd-4d6b-9171-a9235f7a6dc7" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetCurrenciesResponse>
+         <!--Optional:-->
+         <tem:GetCurrenciesResult>
+            <!--Zero or more repetitions:-->
+            <tem:string>?</tem:string>
+         </tem:GetCurrenciesResult>
+      </tem:GetCurrenciesResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetCurrencies"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:authRepository/><con:tags/></con:soapui-project>
